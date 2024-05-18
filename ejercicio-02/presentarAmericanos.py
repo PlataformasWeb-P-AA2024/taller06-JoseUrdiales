@@ -12,4 +12,3 @@ paises = session.query(Pais).all()
 
 paisesAmericanos = session.query(Pais).filter(or_(Pais.continente=="NA", Pais.continente=="SA")).all()
 print(paisesAmericanos)
-print("--------------------------------")

@@ -10,6 +10,6 @@ session = Session()
 
 paises = session.query(Pais).all()
 
-print("--------------------------------")
+
 paisesEuropa = session.query(Pais).filter(Pais.continente=="EU").order_by(Pais.capital).all()
 print(paisesEuropa)

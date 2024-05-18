@@ -12,4 +12,3 @@ paises = session.query(Pais).all()
 
 paisesAsia = session.query(Pais).filter(Pais.continente=="AS").order_by(Pais.dial).all()
 print(paisesAsia)
-print("--------------------------------")
